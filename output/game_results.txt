@@ -1,0 +1,8 @@
+==========Game Results for Delta Agent vs Human==========
+Game 1 Results: 3 - 1
+==========Game Results for Delta Agent vs Human==========
+Game 1 Results: 1 - 3
+Game 2 Results: 3 - 1
+Game 3 Results: 1 - 3
+Delta Agent Wins: 1
+Human Wins: 2

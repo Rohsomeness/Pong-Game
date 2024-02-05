@@ -22,6 +22,8 @@ class Agent():
     Dumb agent that chooses randomly
     Here, we don't care about position of ball or paddle
     '''
+    name = "Random Agent"
+
     def __init__(self, paddle):
         self.action_space = Action
         self.paddle = paddle
@@ -33,6 +35,8 @@ class BallAgent(Agent):
     '''
     This agent only uses the direction of the ball to move it's paddle
     '''
+    name = "Ball Agent"
+
     def choose_action(self, state: State):
         if state.ball.y_move > 0:
             return Action.UP
@@ -47,6 +51,8 @@ class DeltaAgent(Agent):
     Delta agent
     This agent cares about position of ball and it's own paddle
     '''
+    name = "Delta Agent"
+
     def choose_action(self, state):
         if state.ball.ycor() > self.paddle.ycor():
             return Action.UP
